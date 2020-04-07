@@ -126,6 +126,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Data\WebApplication18Context.cs" />
@@ -140,7 +141,12 @@
     <Compile Include="Migrations\202004071405048_InitialDatabase.Designer.cs">
       <DependentUpon>202004071405048_InitialDatabase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202004071414092_AddCategory.cs" />
+    <Compile Include="Migrations\202004071414092_AddCategory.Designer.cs">
+      <DependentUpon>202004071414092_AddCategory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -185,6 +191,11 @@
     <Content Include="Views\Products\Details.cshtml" />
     <Content Include="Views\Products\Edit.cshtml" />
     <Content Include="Views\Products\Index.cshtml" />
+    <Content Include="Views\Categories\Create.cshtml" />
+    <Content Include="Views\Categories\Delete.cshtml" />
+    <Content Include="Views\Categories\Details.cshtml" />
+    <Content Include="Views\Categories\Edit.cshtml" />
+    <Content Include="Views\Categories\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -208,6 +219,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202004071405048_InitialDatabase.resx">
       <DependentUpon>202004071405048_InitialDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004071414092_AddCategory.resx">
+      <DependentUpon>202004071414092_AddCategory.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
