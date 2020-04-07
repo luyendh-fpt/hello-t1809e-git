@@ -20,5 +20,7 @@ namespace WebApplication18.Data
         }
 
         public System.Data.Entity.DbSet<WebApplication18.Models.Product> Products { get; set; }
+
+        public System.Data.Entity.DbSet<WebApplication18.Models.Category> Categories { get; set; }
     }
 }
